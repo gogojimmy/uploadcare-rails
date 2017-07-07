@@ -20,7 +20,7 @@ module Uploadcare
       end
 
       def format(options)
-        return unless %w(png jpeg).include?(options.to_s)
+        return unless %w(png jpeg auto webp).include?(options.to_s)
         "format/#{ options }"
       end
 
