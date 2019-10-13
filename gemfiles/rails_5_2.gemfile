@@ -1,0 +1,9 @@
+source "https://rubygems.org"
+
+# Declare your gem's dependencies in uploadcare_rails.gemspec.
+# Bundler will treat runtime dependencies like base dependencies, and
+# development dependencies will be added by default to the :development group.
+gemspec :path  => '..'
+
+gem "rails", "~> 5.2"
+gem 'capybara', '< 3.2' if Gem.ruby_version < Gem::Version.new('2.3')
